@@ -2,13 +2,13 @@
 @section('content')
 @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 <center> 
-<button type="button" class="btn btn-outline-dark fs-6 mt-5 rounded-pill" data-bs-toggle="modal"  data-bs-target="#staticBackdrop">
+<button type="button" class="btn btn-outline-dark fs-6 mt-5" data-bs-toggle="modal"  data-bs-target="#staticBackdrop">
 ADD PRODUCT
 </button>
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
+    <div class="modal-content bg-info">
+      <div class="modal-header bg-warning">
         <h5 class="modal-title" id="staticBackdropLabel">Inventory</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
@@ -27,7 +27,7 @@ ADD PRODUCT
           <div class="mb-2">
             <input type="file" class="form-control" name="image" id="">
           </div>
-          <button type="submit" class="btn btn-outline-success fw-bold fs=4 "> Add Product </button>
+          <button type="submit" class="btn btn-outline-secondary fw-bold fs=4 text-dark "> Add Product </button>
         </form>
       </div>
       <div class="modal-footer">
